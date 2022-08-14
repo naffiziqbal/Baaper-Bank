@@ -31,7 +31,7 @@ page.addEventListener('click', () => {
     const wrongInfo = document.getElementById('worng-info-section');
 
     if (userInfo.user === userLog.user && userInfo.password === userLog.password) {
-        window.location.href="./index.html";
+        window.location.href="./bank.html";
         console.log("Free To Ride")
     }
     else {

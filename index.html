@@ -15,10 +15,28 @@
     <script src="https://kit.fontawesome.com/38dd300221.js" crossorigin="anonymous"></script>
     <!-- --------------------- -->
 </head>
-
+ 
 <body>
+    <main class="">
+        <section class="log-in-container">
+            <div class="log-in-page container" id="log-in-page">
+                <form action="#" class="form">
+                    <h1>Sign Up</h1>
+                    <h3>Enter Your Details to Log in</h3>
+                    <label for="email" id="email-filed"> Enter Your E-mail</label><br>
+                    <input type="email" name="email" id="email"><br>
+                    <label for="password" id="password-field">Enter Your Password</label><br>
+                    <input type="password" name="password" id="password"> <br>
 
-    <p>Hello Nafiz Iqbal</p>
+                    <input type="button" value="Submit" id="submit-btn">
+                    
+                    <div id="worng-info-section" class="d-none"> Please Type Your Email and Password Correct</div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
