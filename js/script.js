@@ -34,3 +34,46 @@ const currentDepositTotal = previousDepositTotal + newDepositAmount;
 })
 
 
+
+// withdraw Money
+
+document.getElementById('withdraw-btn').addEventListener('click',()=>{
+    console.log('I hate you');
+    const withdrawTotalString = document.getElementById('withdraw-total');
+    const withdraw = withdrawTotalString.innerText;
+    const withdrawTotal = parseFloat(withdraw);
+    const withdrawInputElement = document.getElementById('withdraw-input');
+    const withdrawInputValue = withdrawInputElement.value;
+    const withdrawInput = parseFloat(withdrawInputValue);
+    const totalWithdraw = withdrawInput + withdrawTotal
+    withdrawTotalString.innerText = totalWithdraw;
+
+    const balance = document.getElementById('balance');
+    const balanceString = balance.innerText;
+    const newBlance = parseFloat(balanceString);
+
+    const newBalanceTotalAmount = newBlance - withdrawInput;
+    balance.innerText = newBalanceTotalAmount
+    console.log();
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    withdrawInputElement.value = "";
+
+
+})
+
+
+
